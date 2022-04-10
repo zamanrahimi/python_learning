@@ -1,10 +1,13 @@
-from numpy import * 
+def hello():
+	print ("Hello")
 
 
-arr = array([3,5,7,7,3,2 ])
+def final(x, y):
+	
+	hello()
 
-arr2 = arr.view() # copy and sync
-arr2 = arr.copy() # copy and not sync
-arr[0] = 10
-print(arr)
-print(arr2)
+	c = x+y
+	return c 
+
+f = final(30,10)
+print (f)
