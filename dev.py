@@ -1,19 +1,10 @@
 from numpy import * 
 
-# six ways of creating array 
 
-# array, linspace,logspace,arange,zeros,ones
+arr = array([3,5,7,7,3,2 ])
 
-arr = array([3,4]) # 1. 
-lin = linspace(1,10) # 2. 
-log = logspace(1,10) # 3. 
-arn = arange(1,10) # 4. 
-ze = zeros(10) # 5. 
-on = ones(10) # 6. 
-
+arr2 = arr.view() # copy and sync
+arr2 = arr.copy() # copy and not sync
+arr[0] = 10
 print(arr)
-print(lin)
-print(log)
-print(arn)
-print(ze)
-print(on)
+print(arr2)
