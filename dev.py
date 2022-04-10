@@ -1,4 +1,8 @@
-# How to have multiple argument in python function 
+from subprocess import Popen
+p = Popen("m.bat", cwd=r"C:\Users\test\Desktop\python tutorial")
+stdout, stderr = p.communicate()
+
+
 def multiple_parameter(a, *b):
 	c  = a 
 	for i in b: 
