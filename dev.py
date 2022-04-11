@@ -1,9 +1,16 @@
+def count(list): 
 
-def global_kw():
-	global name
-	name ="John, local"
-	print(name)
+	even =0
+	odd =0
+	for i in list:
+		if i%2==0:
+			even +=1
+		else:
+			odd +=1
+	return even, odd
 
-global_kw()
+list =[2,55,88,40,44]
 
-print(name)
+even, odd = count(list)
+print("The odd number is : {}".format(odd))
+print ("The even number : {}".format(even))
