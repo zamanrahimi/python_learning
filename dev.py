@@ -1,8 +1,5 @@
-def fact(n):
-	if n ==0:
-		return 1
-		# fact called itself
-	return n * fact(n-1)
 
+f = lambda a,b: a * b
 
-print (fact(5) )
+result = f(5,6)
+print(result)
