@@ -1,16 +1,16 @@
-def count(list): 
+def fib (n): 
 
-	even =0
-	odd =0
-	for i in list:
-		if i%2==0:
-			even +=1
-		else:
-			odd +=1
-	return even, odd
+	a=0
+	b=1
+	print (a)
+	print (b)
 
-list =[2,55,88,40,44]
+	for i in range(2, n):
+		c = a+b 
+		a =b 
+		b = c
 
-even, odd = count(list)
-print("The odd number is : {}".format(odd))
-print ("The even number : {}".format(even))
+		print (c)
+
+
+fib (10)
