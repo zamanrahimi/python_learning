@@ -1,7 +1,8 @@
-def list(**name):
-	
-	for k, v in name.items():
-		print(k + " - ", v)
+def user_input_to_argument(name, lname):
+	print (name, lname)
 
 
-list(name='Ali', age=20, phone='4566')
+name = input ("Enter your first name: ") 
+lname = input("Enter your last name: ")
+
+user_input_to_argument(name, lname)
