@@ -1,8 +1,8 @@
-def fuct(n):
-	f = 1
-	for i in range (1, n+1):
-	
-		f = f*i
-	return f 
+def fact(n):
+	if n ==0:
+		return 1
+		# fact called itself
+	return n * fact(n-1)
 
-print (fuct(5) )
+
+print (fact(5) )
