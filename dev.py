@@ -1,15 +1,11 @@
-
-def div (a,b):
-	print (a/b)
-
-
-def smart_div(func1):
-	def innter(a,b):
-		if a<b:
-			a,b = b,a 
-		return func1(a,b)
-
-	return innter
-
-div1 = smart_div(div)
-div1(2,4)
+import sys
+  
+# sys.path.insert(0, './pages')
+sys.path.append('./pages')
+  
+#sub_page is sub_page.py which has add() and sub() functions
+from sub_page import *
+  
+# calling odd_even function
+add(3,5)
+sub(10,5)
