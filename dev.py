@@ -1,7 +1,15 @@
 
+def div (a,b):
+	print (a/b)
 
-nums = [23,4,5,66,77,22,10,11,21]
 
-result = list(filter(lambda n: n%2==0, nums))
+def smart_div(func1):
+	def innter(a,b):
+		if a<b:
+			a,b = b,a 
+		return func1(a,b)
 
-print(result)
+	return innter
+
+div1 = smart_div(div)
+div1(2,4)
