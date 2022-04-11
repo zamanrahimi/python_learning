@@ -1,8 +1,9 @@
-def user_input_to_argument(name, lname):
-	print (name, lname)
 
+def global_kw():
+	global name
+	name ="John, local"
+	print(name)
 
-name = input ("Enter your first name: ") 
-lname = input("Enter your last name: ")
+global_kw()
 
-user_input_to_argument(name, lname)
+print(name)
