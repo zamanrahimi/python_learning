@@ -1,5 +1,9 @@
-from test import * 
+class Computer: 
+
+	def config(self):
+		print("1GB RAM, 2CPU, 2TB HDD")
 
 
-hello()
+com = Computer()
 
+com.config()
