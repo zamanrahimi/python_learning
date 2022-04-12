@@ -1,14 +1,21 @@
-class Computer:
+class Computer: 
+	
+	def __init__(self, ram, cpu):
+		self.ram = ram
+		self.cpu =cpu
 
-	def __init__(self,ram, core):
-		self.ram = core 
-		self.core = ram 
-		
+	def show(self):
+		print(self.ram, self.cpu)
 
-	def config(self):
-		print("Details", self.ram, self.core)
+	class HP: 
+		def __init__(self, hpRam, hpCpu):
+			self.hpRam=hpRam
+			self.hpCpu=hpCpu
+		def show(self):
+			print(self.hpRam, self.hpCpu)
 
+c = Computer('21GB', '21GH')
+hpc = Computer.HP('20GB', '100GB')
 
-com1 = Computer('2GB RAM', 'CORI7')
-
-com1.config()
+c.show()
+hpc.show()
