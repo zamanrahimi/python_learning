@@ -17,3 +17,5 @@ class B (A):
 
 
 b = B()
+
+# MRO = method resolution order: bottom to top, left to right
