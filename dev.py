@@ -1,9 +1,14 @@
-class Computer: 
+class Computer:
+
+	def __init__(self,ram, core):
+		self.ram = core 
+		self.core = ram 
+		
 
 	def config(self):
-		print("1GB RAM, 2CPU, 2TB HDD")
+		print("Details", self.ram, self.core)
 
 
-com = Computer()
+com1 = Computer('2GB RAM', 'CORI7')
 
-com.config()
+com1.config()
