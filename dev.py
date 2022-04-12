@@ -1,21 +1,20 @@
-class Computer: 
-	
-	def __init__(self, ram, cpu):
-		self.ram = ram
-		self.cpu =cpu
+class A: 
 
-	def show(self):
-		print(self.ram, self.cpu)
+	def feature1(self):
+		print("feature1")
 
-	class HP: 
-		def __init__(self, hpRam, hpCpu):
-			self.hpRam=hpRam
-			self.hpCpu=hpCpu
-		def show(self):
-			print(self.hpRam, self.hpCpu)
+class B: 
 
-c = Computer('21GB', '21GH')
-hpc = Computer.HP('20GB', '100GB')
+	def feature2(self):
+		print("feature2")
 
-c.show()
-hpc.show()
+class C(A,B): 
+
+	def feature3(self):
+		print("feature3")
+
+
+c1 = C()
+c1.feature1()
+c1.feature2()
+c1.feature3()
