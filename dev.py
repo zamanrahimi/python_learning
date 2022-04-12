@@ -1,20 +1,19 @@
 class A: 
+	def __init__(self):
+		print("init from A")
 
 	def feature1(self):
 		print("feature1")
 
-class B: 
+class B (A): 
+
+	def __init__(self):
+		super().__init__()
+		print("init from B")
+		
 
 	def feature2(self):
 		print("feature2")
 
-class C(A,B): 
 
-	def feature3(self):
-		print("feature3")
-
-
-c1 = C()
-c1.feature1()
-c1.feature2()
-c1.feature3()
+b = B()
