@@ -1,1 +1,1 @@
-Hello, this file should be written inside file1.txt. but first it should be created
+"Hello from file.py" 
