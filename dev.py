@@ -1,17 +1,18 @@
-# Method Overloading: How to use different number of arguments in the same function
-class MethodOverloading: 
+#Method OverWriding: two method with the same name in two different classes 
 
-	def sum(self, x= None, y= None, z= None):
-		if(x != None and y !=None and z!= None):
+class One: 
 
-			s = x+y+z
-			print(s)
-
-		elif (x!=None and y!=None):
-			s = x+y
-			print(s)
+	def first(self):
+		print("First method from class one")
 
 
-m= MethodOverloading()
+		
+class Two (One): 
 
-m.sum(30,50,70)
+	def first(self):
+		print("First method from class Two")
+
+t = Two()
+t.first()
+
+
