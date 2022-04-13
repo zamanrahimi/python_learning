@@ -1,18 +1,14 @@
-#Method OverWriding: two method with the same name in two different classes 
+# Exception Handiling 
 
-class One: 
-
-	def first(self):
-		print("First method from class one")
+x =4 
+y =3
 
 
-		
-class Two (One): 
+try:
+	print(x/y)
 
-	def first(self):
-		print("First method from class Two")
+except Exception:
+	print("Number can not be divided by Zero")
 
-t = Two()
-t.first()
-
-
+finally: 
+	print("Normal coding block")
