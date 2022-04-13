@@ -1,14 +1,25 @@
-# Exception Handiling 
+#Multithreading 
 
-x =4 
-y =3
+from threading import * 
+from time import sleep
+
+class A (Thread):
+	def run(self):
+		for i in range(5):
+			print("Hello")
+			sleep(1)
 
 
-try:
-	print(x/y)
 
-except Exception:
-	print("Number can not be divided by Zero")
+class B (Thread):
+	def run(self):
+		for i in range(5):
+			print("hi")
+			sleep(1)
 
-finally: 
-	print("Normal coding block")
+
+a1 = A()
+a2 = B()
+a1.start()
+sleep(0.001)
+a2.start()
