@@ -1,21 +1,20 @@
-class A: 
-	def __init__(self):
-		print("init from A")
+class Duck: 
+	def sound(self):
+		print("Quack Quack")
 
-	def feature1(self):
-		print("feature1")
+class Dog: 
+	def sound(self):
+		print("Woof Woof")
 
-class B (A): 
-
-	def __init__(self):
-		super().__init__()
-		print("init from B")
-		
-
-	def feature2(self):
-		print("feature2")
+class Cat: 
+	def sound(self):
+		print("Mew Mew")
 
 
-b = B()
+def all_ob(ojb):
+	ojb.sound()
 
-# MRO = method resolution order: bottom to top, left to right
+x1 = Duck()
+x2 = Dog()
+x = Cat()
+all_ob(x)
