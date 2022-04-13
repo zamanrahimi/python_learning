@@ -1,15 +1,17 @@
-class Salary: 
+# Method Overloading: How to use different number of arguments in the same function
+class MethodOverloading: 
 
-	def __init__(self, salary):
-		self.salary = salary
+	def sum(self, x= None, y= None, z= None):
+		if(x != None and y !=None and z!= None):
 
-	def __add__(self, other):
+			s = x+y+z
+			print(s)
 
-		return self.salary + other.salary
+		elif (x!=None and y!=None):
+			s = x+y
+			print(s)
 
 
-s1 = Salary(2000)
-s2 = Salary(2000)
-s3 = s1+s2
+m= MethodOverloading()
 
-print(s3)
+m.sum(30,50,70)
