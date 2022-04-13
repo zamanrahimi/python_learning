@@ -1,20 +1,15 @@
-class Duck: 
-	def sound(self):
-		print("Quack Quack")
+class Salary: 
 
-class Dog: 
-	def sound(self):
-		print("Woof Woof")
+	def __init__(self, salary):
+		self.salary = salary
 
-class Cat: 
-	def sound(self):
-		print("Mew Mew")
+	def __add__(self, other):
+
+		return self.salary + other.salary
 
 
-def all_ob(ojb):
-	ojb.sound()
+s1 = Salary(2000)
+s2 = Salary(2000)
+s3 = s1+s2
 
-x1 = Duck()
-x2 = Dog()
-x = Cat()
-all_ob(x)
+print(s3)
