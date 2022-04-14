@@ -1,7 +1,7 @@
 # Python - Binary search 
 
 pos = -1
-n = 10
+n = 6
 
 # list
 li = [10, 4, 5, 6]
@@ -9,9 +9,8 @@ li = [10, 4, 5, 6]
 # function 
 def search(li, n):	
 	i = 0
-	while i< len(li):
-		 
-		if li[i] == n:
+	for l in li:	 
+		if l == n:
 			global pos
 			pos = i 
 			return True
