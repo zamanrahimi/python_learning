@@ -1,5 +1,8 @@
 # Python - Binary search 
 
+pos = -1
+n = 10
+
 # list
 li = [10, 4, 5, 6]
 
@@ -7,7 +10,10 @@ li = [10, 4, 5, 6]
 def search(li, n):	
 	i = 0
 	while i< len(li):
+		 
 		if li[i] == n:
+			global pos
+			pos = i 
 			return True
 		i +=1 
 
@@ -15,8 +21,8 @@ def search(li, n):
 	return False
 
 # calling the function 
-if search(li, 6):
-	print("found")
+if search(li,n):
+	print("found", n , "at position of ", pos)
 
 else: 
 	print("Not found")
