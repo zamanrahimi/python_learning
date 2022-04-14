@@ -9,3 +9,9 @@ if(mycon):
 	print("Connected")
 else:
 	print("Connection denied")
+
+
+# Execution section 
+
+myc = mycon.cursor()
+myc.execute("create table emp1(id int, name text)")
