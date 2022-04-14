@@ -1,7 +1,7 @@
 # Python - Linear search 
 
 pos = -1
-n = 10
+n = 22
 
 # list
 li = [1, 4, 5, 6,7,10,22]
@@ -19,9 +19,9 @@ def search(li, n):
 			return True
 		else:
 			if li[mid] < n:
-				l = mid
+				l = mid + 1
 			else:
-				u = mid
+				u = mid - 1
 
 # calling the function 
 if search(li,n):
