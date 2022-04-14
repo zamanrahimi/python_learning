@@ -18,11 +18,11 @@ li = myc.execute("show tables")
 results = myc.fetchall()
 for r in results:
   print (r)
-  
-# --------- Insert data into the emp1 table -----------
-li = myc.execute("insert into emp1 values(2, 'Khan')")
-mycon.commit()
 
+# --------- select data rom emp1 table -----------
 
-
+myc.execute("select * from emp1")
+li = myc.fetchall()
+for l in li: 
+	print(l)
 
