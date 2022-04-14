@@ -1,15 +1,11 @@
-# Selection Sort: compare the first or min element with each element in the list
-def sort(nums):
-	for i in range (8):
-		minpos = i
-		for j in range(i,8):
-			if nums[j] < nums[minpos]:
-				minpos = j
-				temp = nums[i]
-				nums[i] = nums[minpos]
-				nums[minpos] = temp
+# connect python with mysql 
+# use mysql-connector plugin to do this 
+# ------- pip3 install mysql-connector ---------
 
-nums = [5,3,8,6,7,2,1,0]
-sort(nums)
+import mysql.connector 
 
-print(nums)
+mycon = mysql.connector.connect(host="localhost", user="root", passwd="", database ="python")
+if(mycon):
+	print("Connected")
+else:
+	print("Connection denied")
