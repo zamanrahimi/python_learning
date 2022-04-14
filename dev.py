@@ -1,8 +1,22 @@
-#how to copy data from file.py into file1.txt
+# Python - Binary search 
 
-f1 = open("file.py", "r")
-f2 = open("file1.txt", "w")
+# list
+li = [10, 4, 5, 6]
 
+# function 
+def search(li, n):	
+	i = 0
+	while i< len(li):
+		if li[i] == n:
+			return True
+		i +=1 
 
-for data in f1:
-	f2.write(data)
+	
+	return False
+
+# calling the function 
+if search(li, 6):
+	print("found")
+
+else: 
+	print("Not found")
