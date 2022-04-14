@@ -11,7 +11,11 @@ else:
 	print("Connection denied")
 
 
-# Execution section 
+# Execution section ---- list tables from python databse 
 
 myc = mycon.cursor()
-myc.execute("create table emp1(id int, name text)")
+li = myc.execute("show tables")
+results = myc.fetchall()
+for r in results:
+  print (r)
+
