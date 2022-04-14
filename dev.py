@@ -1,23 +1,27 @@
 # Python - Linear search 
 
 pos = -1
-n = 6
+n = 10
 
 # list
-li = [10, 4, 5, 6]
+li = [1, 4, 5, 6,7,10,22]
 
 # function 
 def search(li, n):	
-	i = 0
-	for l in li:	 
-		if l == n:
-			global pos
-			pos = i 
-			return True
-		i +=1 
+	l=0
+	u = len(li)-1
 
-	
-	return False
+	while l<=u:
+		mid = (l+u) //2
+		if li[mid] ==n:
+			global pos
+			pos =mid
+			return True
+		else:
+			if li[mid] < n:
+				l = mid
+			else:
+				u = mid
 
 # calling the function 
 if search(li,n):
