@@ -1,4 +1,4 @@
-# Python - Binary search 
+# Python - Linear search 
 
 pos = -1
 n = 6
