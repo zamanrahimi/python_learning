@@ -1,31 +1,12 @@
-# Python - Linear search 
+def sort(nums):
+	for i in range (len(nums)-1,0, -1):
+		for j in range(i):
+			if nums[j] > nums[j+1]:
+				temp = nums[j]
+				nums[j]= nums[j+1]
+				nums[j+1] = temp
 
-pos = -1
-n = 22
+nums = [5,3,8,6,7,2]
+sort(nums)
 
-# list
-li = [1, 4, 5, 6,7,10,22]
-
-# function 
-def search(li, n):	
-	l=0
-	u = len(li)-1
-
-	while l<=u:
-		mid = (l+u) //2
-		if li[mid] ==n:
-			global pos
-			pos =mid
-			return True
-		else:
-			if li[mid] < n:
-				l = mid + 1
-			else:
-				u = mid - 1
-
-# calling the function 
-if search(li,n):
-	print("found", n , "at position of ", pos)
-
-else: 
-	print("Not found")
+print(nums)
